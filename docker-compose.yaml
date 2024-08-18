@@ -1,15 +1,8 @@
-version: '3.8'
+version: '3'
 services:
-  frontend:
-    image: 20240817_nextjs:latest
+  nextjs:
+    build: .
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-    restart: unless-stopped
-    networks:
-      - webnet
-
-networks:
-  webnet:
-    driver: bridge
