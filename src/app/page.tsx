@@ -1,7 +1,7 @@
 // import Image from "next/image";
+import React from 'react';  // 追加: Reactをインポート
 
-// メインのコンポーネントを定義
-export default function Page() {
+const page: React.FC = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* メインのコンテンツを囲む div 要素 */}
@@ -121,4 +121,7 @@ export default function Page() {
       </div>
     </main>
   );
-}
+};
+
+// メインのコンポーネントを定義
+export default page;
